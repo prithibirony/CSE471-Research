@@ -1,0 +1,253 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f6fb;
+    color: #243047;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+h1 {
+    color: #2457a7;
+    text-align: center;
+    margin-top: 60px;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+    color: #5b6577;
+}
+
+/* Task Form Design */
+
+.task-form {
+    max-width: 500px;
+    margin: 35px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.task-form h2 {
+    text-align: center;
+    color: #2457a7;
+    margin-bottom: 25px;
+}
+
+.task-form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.task-form input,
+.task-form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccd3df;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.task-form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 22px;
+    background-color: #2457a7;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.task-form button:hover {
+    background-color: #183f80;
+}
+
+
+/* Task List Design */
+
+.task-list {
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+.task-list h2 {
+    color: #2457a7;
+}
+
+.task-item {
+    background: white;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.task-item h3 {
+    color: #2457a7;
+}
+
+.task-item p {
+    text-align: left;
+    font-size: 14px;
+}
+
+.task-item button {
+    padding: 8px 12px;
+    margin: 8px 5px 0 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.task-item button:first-of-type {
+    background-color: #198754;
+    color: white;
+}
+
+.task-item button:last-of-type {
+    background-color: #dc3545;
+    color: white;
+}
+
+
+.edit-input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid red;
+    border-radius: 6px;
+    font-size: 15px;
+    background-color: white;
+}
+
+.save-button {
+    background-color: #198754;
+    color: white;
+}
+
+.cancel-button {
+    background-color: #6c757d;
+    color: white;
+}
+
+.task-filter {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.task-filter label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.task-filter select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccd3df;
+    border-radius: 6px;
+    font-size: 15px;
+    background-color: white;
+}
+
+
+/* Task list design improvement */
+
+.task-list {
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.task-list h2 {
+    text-align: center;
+    color: #2457a7;
+    margin-bottom: 20px;
+}
+
+.task-item {
+    background: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #e1e6ef;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.task-item h3 {
+    color: #2457a7;
+    margin-top: 0;
+}
+
+.task-item p {
+    text-align: left;
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.task-item button {
+    padding: 9px 14px;
+    margin: 10px 5px 0 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.task-item button:hover {
+    opacity: 0.85;
+}
+
+/* Mobile responsive design */
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px 12px;
+    }
+
+    .task-form,
+    .task-list {
+        width: 100%;
+    }
+
+    .task-item button {
+        margin-top: 10px;
+    }
+}
+
+
+.task-form input,
+.task-form select {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Mark Complete Button - Sky Blue */
+.task-item button:nth-of-type(2) {
+    background-color: #38bdf8;
+    color: white;
+}
+
+.interface-navigation {
+    text-align: center;
+    margin: 20px;
+}
+
+.interface-navigation a {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.interface-navigation a:hover {
+    background-color: #1d4ed8;
+}

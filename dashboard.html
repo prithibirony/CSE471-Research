@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Task Dashboard</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+    <header class="dashboard-header">
+        <h1>Student Task Dashboard</h1>
+        <p>Organize your assignments, projects and deadlines.</p>
+    </header>
+
+    <main class="dashboard-container">
+
+        <!-- Summary Cards -->
+        <section class="summary-section">
+
+            <div class="summary-card">
+                <h3>Total Tasks</h3>
+                <h2 id="totalTasks">0</h2>
+            </div>
+
+            <div class="summary-card">
+                <h3>Pending Tasks</h3>
+                <h2 id="pendingTasks">0</h2>
+            </div>
+
+            <div class="summary-card">
+                <h3>Completed Tasks</h3>
+                <h2 id="completedTasks">0</h2>
+            </div>
+
+        </section>
+
+        <!-- Add Task Form -->
+        <section class="dashboard-form">
+            <h2>Add New Task</h2>
+
+            <form id="taskForm">
+
+                <label for="taskTitle">Task Name</label>
+                <input type="text" id="taskTitle"
+                    placeholder="Enter assignment name" required>
+
+                <label for="taskDeadline">Deadline</label>
+                <input type="date" id="taskDeadline" required>
+
+                <label for="taskCategory">Category</label>
+                <select id="taskCategory">
+                    <option value="Assignment">Assignment</option>
+                    <option value="Exam">Exam</option>
+                    <option value="Project">Project</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <button type="submit">Add Task</button>
+
+            </form>
+        </section>
+
+        <!-- Upcoming Deadlines -->
+        <section class="upcoming-section">
+            <h2>Upcoming Deadlines</h2>
+            <div id="upcomingTasks"></div>
+        </section>
+
+        <!-- All Tasks -->
+        <section class="dashboard-task-section">
+
+            <div class="task-heading">
+                <h2>My Tasks</h2>
+
+                <select id="filterTasks">
+                    <option value="All">All Tasks</option>
+                    <option value="Pending">Pending Tasks</option>
+                    <option value="Completed">Completed Tasks</option>
+                </select>
+            </div>
+
+            <div id="taskList"></div>
+
+        </section>
+
+    </main>
+
+    <script src="dashboard.js"></script>
+
+</body>
+<div class="interface-navigation">
+    <a href="index.html">Interface A - Simple List</a>
+    <a href="dashboard.html">Interface B - Dashboard</a>
+</div>
+</html>
